@@ -7,10 +7,10 @@ import { withInfo } from '@storybook/addon-info';
 import Button from './Button';
 
 // Types
-const typesInfo = `
+const buttonInfo = `
   The following types are support \`default\`, \`info\`, \`primary\`, \`danger\`.
 `;
 
-const types = () => <div>Button Goes Here</div>;
+const button = () => <div>Button Goes Here</div>;
 
-storiesOf('Button', module).add('Types', withInfo(typesInfo)(types));
+storiesOf('Button', module).add('Types', withInfo(buttonInfo)(button));
