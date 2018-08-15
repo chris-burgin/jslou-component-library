@@ -7,11 +7,11 @@ import { withInfo } from '@storybook/addon-info';
 import Button from './Button';
 
 // Types
-const typesInfo = `
+const buttonTypesInfo = `
   The following types are support \`default\`, \`info\`, \`primary\`, \`danger\`.
 `;
 
-const types = () => (
+const buttonTypes = () => (
   <div>
     <ul style={{ listStyle: 'none' }}>
       <li style={{ marginBottom: '20px' }}>
@@ -49,4 +49,7 @@ const types = () => (
   </div>
 );
 
-storiesOf('Button', module).add('Types', withInfo(typesInfo)(types));
+storiesOf('Button', module).add(
+  'Types',
+  withInfo(buttonTypesInfo)(buttonTypes)
+);
