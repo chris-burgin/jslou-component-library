@@ -4,40 +4,47 @@ import variables from '../../Theme/Theme.variables';
 const buttonStyles = {
   default: css`
     background-color: ${variables.gray};
-    border-bottom: 3px solid ${variables.gray};
-  `,
-  info: css`
-    background-color: ${variables.green};
-    border-bottom: 3px solid ${variables.green};
+    border-bottom: 6px solid ${variables.gray};
   `,
   primary: css`
     background-color: ${variables.primary};
-    border-bottom: 3px solid ${variables.primary};
+    border-bottom: 6px solid ${variables.primary};
+  `,
+  info: css`
+    background-color: ${variables.green};
+    border-bottom: 6px solid ${variables.green};
   `,
   danger: css`
     background-color: ${variables.red};
-    border-bottom: 3px solid ${variables.red};
+    border-bottom: 6px solid ${variables.red};
   `,
 };
 
-// Button Components
 const StyledButton = styled.button`
-  color: white;
-  border: none;
   padding: 20px 60px;
-  transition: 150ms;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: white;
   cursor: pointer;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
+  transition: 70ms;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 
   ${props => buttonStyles[props.buttonType]};
 
-  &:hover {
-    background-color: white;
-    color: ${variables.black};
-    box-shadow: ${variables.shadow};
-  }
+  ${props =>
+    !props.disabled &&
+    css`
+      &:hover {
+        color: black;
+        background-color: white;
+        box-shadow: ${variables.shadow};
+      }
+    `};
 `;
 
 export default StyledButton;

@@ -13,25 +13,39 @@ const typesInfo = `
 
 const types = () => (
   <div>
-    {/* Default */}
-    <Button onClick={action('Default Clicked')} buttonType="default">
-      Default
-    </Button>
-    <br /> <br />
-    {/* Primary */}
-    <Button onClick={action('Primary Clicked')} buttonType="primary">
-      Primary
-    </Button>
-    <br /> <br />
-    {/* Info */}
-    <Button onClick={action('Info Clicked')} buttonType="info">
-      Info
-    </Button>
-    <br /> <br />
-    {/* Danger */}
-    <Button onClick={action('Danger Clicked')} buttonType="danger">
-      Danger
-    </Button>
+    <ul style={{ listStyle: 'none' }}>
+      <li style={{ marginBottom: '20px' }}>
+        {/* Default */}
+        <Button onClick={action('Default Clicked')} buttonType="default">
+          Default
+        </Button>
+      </li>
+      <li style={{ marginBottom: '20px' }}>
+        {/* Info */}
+        <Button onClick={action('Info Clicked')} buttonType="info">
+          Info
+        </Button>
+      </li>
+      <li style={{ marginBottom: '20px' }}>
+        {/* Primary */}
+        <Button onClick={action('Primary Clicked')} buttonType="primary">
+          Primary
+        </Button>
+      </li>
+      <li style={{ marginBottom: '20px' }}>
+        {/* Danger */}
+        <Button onClick={action('Danger Clicked')} buttonType="danger">
+          Danger
+        </Button>
+      </li>
+
+      <li style={{ marginBottom: '20px' }}>
+        {/* Danger Disabled */}
+        <Button onClick={action('Danger Clicked')} buttonType="danger" disabled>
+          Danger Disabled
+        </Button>
+      </li>
+    </ul>
   </div>
 );
 

@@ -8,12 +8,13 @@ const Button = ({ children, ...props }) => (
 
 // Prop Types
 Button.propTypes = {
-  onClick: PropTypes.func,
   buttonType: PropTypes.string,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool,
 };
 Button.defaultProps = {
-  onClick: () => {},
   buttonType: 'default',
+  disabled: false,
 };
 
 Button.displayName = 'Button';
