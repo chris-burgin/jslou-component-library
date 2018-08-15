@@ -11,28 +11,6 @@ const typesInfo = `
   The following types are support \`default\`, \`info\`, \`primary\`, \`danger\`.
 `;
 
-const types = () => (
-  <div>
-    {/* Default */}
-    <Button onClick={action('Default Clicked')} buttonType="default">
-      Default
-    </Button>
-    <br /> <br />
-    {/* Primary */}
-    <Button onClick={action('Primary Clicked')} buttonType="primary">
-      Primary
-    </Button>
-    <br /> <br />
-    {/* Info */}
-    <Button onClick={action('Info Clicked')} buttonType="info">
-      Info
-    </Button>
-    <br /> <br />
-    {/* Danger */}
-    <Button onClick={action('Danger Clicked')} buttonType="danger">
-      Danger
-    </Button>
-  </div>
-);
+const types = () => <div>Button Goes Here</div>;
 
 storiesOf('Button', module).add('Types', withInfo(typesInfo)(types));
