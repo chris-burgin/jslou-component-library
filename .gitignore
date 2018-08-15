@@ -1,0 +1,8 @@
+node_modules
+build
+dist
+.cache
+.DS_Store
+storybook-static/***
+!storybook-static/fonts
+!storybook-static/fonts/*

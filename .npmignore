@@ -1,0 +1,12 @@
+node_modules
+src
+documentation
+config
+.eslintrc
+.eslintignore
+prettier.config.js
+.prettierignore
+.gitignore
+readme.md
+.storybook
+storybook-static

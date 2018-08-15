@@ -1,0 +1,8 @@
+{
+  "extends": ["@generationtux/eslint-config"],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-restricted-globals": [0],
+    "no-multi-str": [0]
+  }
+}
