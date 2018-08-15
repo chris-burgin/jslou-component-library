@@ -1,6 +1,5 @@
 import { configure } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
-import brand from './brand';
 // automatically import all files ending in *.stories.js
 const componentStories = require.context('../src', true, /.story.js$/);
 const otherStories = require.context('./', true, /.story.js$/);
@@ -10,7 +9,6 @@ function loadStories() {
 }
 
 setOptions({
-  name: brand,
-  url: `http://${brand}.com`,
+  name: 'JS Lou Example',
 });
 configure(loadStories, module);
